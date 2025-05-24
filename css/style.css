@@ -67,6 +67,7 @@ ul li {
   padding: 12px 8px 12px 50px;
   user-select: none;
   cursor: pointer;
+  position: relative;
 }
 
 ul li::before {
@@ -78,9 +79,8 @@ ul li::before {
   background-image: url(/To-Do-Img/images/unchecked.png);
   background-size: cover;
   background-position: center;
-  /* top:px; */
-  left: 205px;
-  /* position: relative; */
+  top: 9px;
+  left: 8px;
 }
 
 .checked {
