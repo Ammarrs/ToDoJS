@@ -1,4 +1,5 @@
 const inputBox = document.getElementById("input");
+const btn = document.getElementById('btn');
 const listContainer = document.getElementById("listContainer");
 
 function addTask() {
@@ -32,5 +33,11 @@ function saveData() {
 function showList() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
+
+inputBox.addEventListener("keydown" , (e) => {
+  if (e.key === 'Enter') {
+    btn.click();
+  }
+})
 
 showList();
